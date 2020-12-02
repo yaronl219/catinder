@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/catinder/static/css/main.16277f05.chunk.css",
-    "main.js": "/catinder/static/js/main.c36fc383.chunk.js",
-    "main.js.map": "/catinder/static/js/main.c36fc383.chunk.js.map",
-    "runtime-main.js": "/catinder/static/js/runtime-main.b8252775.js",
-    "runtime-main.js.map": "/catinder/static/js/runtime-main.b8252775.js.map",
-    "static/js/2.cdc71fb6.chunk.js": "/catinder/static/js/2.cdc71fb6.chunk.js",
-    "static/js/2.cdc71fb6.chunk.js.map": "/catinder/static/js/2.cdc71fb6.chunk.js.map",
-    "static/js/3.6664f114.chunk.js": "/catinder/static/js/3.6664f114.chunk.js",
-    "static/js/3.6664f114.chunk.js.map": "/catinder/static/js/3.6664f114.chunk.js.map",
+    "main.css": "/catinder/static/css/main.bc53dbee.chunk.css",
+    "main.js": "/catinder/static/js/main.b8d22852.chunk.js",
+    "main.js.map": "/catinder/static/js/main.b8d22852.chunk.js.map",
+    "runtime-main.js": "/catinder/static/js/runtime-main.9dc3df10.js",
+    "runtime-main.js.map": "/catinder/static/js/runtime-main.9dc3df10.js.map",
+    "static/js/2.b19791c2.chunk.js": "/catinder/static/js/2.b19791c2.chunk.js",
+    "static/js/2.b19791c2.chunk.js.map": "/catinder/static/js/2.b19791c2.chunk.js.map",
+    "static/js/3.d29c482a.chunk.js": "/catinder/static/js/3.d29c482a.chunk.js",
+    "static/js/3.d29c482a.chunk.js.map": "/catinder/static/js/3.d29c482a.chunk.js.map",
     "index.html": "/catinder/index.html",
-    "static/css/main.16277f05.chunk.css.map": "/catinder/static/css/main.16277f05.chunk.css.map",
-    "static/js/2.cdc71fb6.chunk.js.LICENSE.txt": "/catinder/static/js/2.cdc71fb6.chunk.js.LICENSE.txt",
+    "static/css/main.bc53dbee.chunk.css.map": "/catinder/static/css/main.bc53dbee.chunk.css.map",
+    "static/js/2.b19791c2.chunk.js.LICENSE.txt": "/catinder/static/js/2.b19791c2.chunk.js.LICENSE.txt",
     "static/media/baby-cat.21007a7b.jpg": "/catinder/static/media/baby-cat.21007a7b.jpg",
     "static/media/grown-cat.ee771749.jpg": "/catinder/static/media/grown-cat.ee771749.jpg",
     "static/media/grumpycat.99162d77.jpg": "/catinder/static/media/grumpycat.99162d77.jpg",
@@ -19,9 +19,9 @@
     "static/media/old-cat.976ce761.jpg": "/catinder/static/media/old-cat.976ce761.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.b8252775.js",
-    "static/js/2.cdc71fb6.chunk.js",
-    "static/css/main.16277f05.chunk.css",
-    "static/js/main.c36fc383.chunk.js"
+    "static/js/runtime-main.9dc3df10.js",
+    "static/js/2.b19791c2.chunk.js",
+    "static/css/main.bc53dbee.chunk.css",
+    "static/js/main.b8d22852.chunk.js"
   ]
 }
