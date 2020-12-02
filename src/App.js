@@ -1,4 +1,4 @@
-import { AppBar, Tabs, Tab } from '@material-ui/core';
+import { AppBar, Tabs, Tab, Dialog } from '@material-ui/core';
 import React, { useEffect, useState } from 'react';
 import { Switch, useHistory, Route, useLocation } from 'react-router-dom';
 import { CardSwipePage } from './Pages/CardSwipePage';
@@ -10,6 +10,7 @@ import PetsIcon from '@material-ui/icons/Pets';
 import PersonIcon from '@material-ui/icons/Person';
 import InfoIcon from '@material-ui/icons/Info';
 import { AboutPage } from './Pages/AboutPage';
+import { LocationError } from './cmps/LocationError';
 
 function App() {
 
@@ -20,17 +21,12 @@ function App() {
 
   const [tab, setTab] = useState(0)
   const [isLoaded, setIsLoaded] = useState(false)
+  const [hasLocationError, setLocationError] = useState(false)
 
   const tabs = ['/home', '/liked', '/user', '/about']
 
   useEffect(() => {
-    navigator.geolocation.getCurrentPosition((ev) => {
-      console.log('app got loc')
-      cardStore.setUserLocation(ev)
-      cardStore.getUserPrefs()
-      console.log('loaded')
-      setIsLoaded(true)
-    })
+    getUserLocation()
   }, [])
 
   useEffect(() => {
@@ -45,9 +41,33 @@ function App() {
     history.push(tabs[view])
   }
 
+  function getUserLocation() {
+    navigator.geolocation.getCurrentPosition(navigatorSuccess,navigatorError)
+  }
+
+  function navigatorSuccess(ev) {
+    console.log('app got loc')
+    cardStore.setUserLocation(ev)
+    cardStore.getUserPrefs()
+    console.log('loaded')
+    setIsLoaded(true)
+  }
+
+  function navigatorError(ev) {
+    console.log('error',ev)
+    setLocationError(true)
+  }
+
+  function onCloseLocationAndRetry() {
+    setLocationError(false)
+    getUserLocation()
+  }
+
   return (
     <div className="App">
-      {/* <Navbar tab={tab} setTabFromParam={setTabFromParam} tabs={tabs} /> */}
+      <Dialog open={hasLocationError}>
+        <LocationError onClose={onCloseLocationAndRetry} />
+        </Dialog>
       <AppBar>
         <Tabs value={tab} variant="fullWidth" onChange={(ev, val) => setTabFromParam(tabs[val])}>
           <Tab icon={<PetsIcon />} />
