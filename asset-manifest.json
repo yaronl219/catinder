@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/catinder/static/css/main.bc53dbee.chunk.css",
-    "main.js": "/catinder/static/js/main.9e5f9828.chunk.js",
-    "main.js.map": "/catinder/static/js/main.9e5f9828.chunk.js.map",
+    "main.js": "/catinder/static/js/main.7b30a65a.chunk.js",
+    "main.js.map": "/catinder/static/js/main.7b30a65a.chunk.js.map",
     "runtime-main.js": "/catinder/static/js/runtime-main.9dc3df10.js",
     "runtime-main.js.map": "/catinder/static/js/runtime-main.9dc3df10.js.map",
     "static/js/2.b19791c2.chunk.js": "/catinder/static/js/2.b19791c2.chunk.js",
@@ -22,6 +22,6 @@
     "static/js/runtime-main.9dc3df10.js",
     "static/js/2.b19791c2.chunk.js",
     "static/css/main.bc53dbee.chunk.css",
-    "static/js/main.9e5f9828.chunk.js"
+    "static/js/main.7b30a65a.chunk.js"
   ]
 }
