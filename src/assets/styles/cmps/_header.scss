@@ -1,0 +1,11 @@
+header {
+    background-color: #FFF !important;
+    svg {
+        fill: #999 !important;
+    }
+    .Mui-selected {
+        svg {
+            fill: rgb(253,80,104) !important;
+        }
+    }
+}
