@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/yaronl219/catinder/static/css/main.16277f05.chunk.css",
+    "main.js": "/yaronl219/catinder/static/js/main.c36fc383.chunk.js",
+    "main.js.map": "/yaronl219/catinder/static/js/main.c36fc383.chunk.js.map",
+    "runtime-main.js": "/yaronl219/catinder/static/js/runtime-main.a7b66fc6.js",
+    "runtime-main.js.map": "/yaronl219/catinder/static/js/runtime-main.a7b66fc6.js.map",
+    "static/js/2.cdc71fb6.chunk.js": "/yaronl219/catinder/static/js/2.cdc71fb6.chunk.js",
+    "static/js/2.cdc71fb6.chunk.js.map": "/yaronl219/catinder/static/js/2.cdc71fb6.chunk.js.map",
+    "static/js/3.6664f114.chunk.js": "/yaronl219/catinder/static/js/3.6664f114.chunk.js",
+    "static/js/3.6664f114.chunk.js.map": "/yaronl219/catinder/static/js/3.6664f114.chunk.js.map",
+    "index.html": "/yaronl219/catinder/index.html",
+    "static/css/main.16277f05.chunk.css.map": "/yaronl219/catinder/static/css/main.16277f05.chunk.css.map",
+    "static/js/2.cdc71fb6.chunk.js.LICENSE.txt": "/yaronl219/catinder/static/js/2.cdc71fb6.chunk.js.LICENSE.txt",
+    "static/media/baby-cat.21007a7b.jpg": "/yaronl219/catinder/static/media/baby-cat.21007a7b.jpg",
+    "static/media/grown-cat.ee771749.jpg": "/yaronl219/catinder/static/media/grown-cat.ee771749.jpg",
+    "static/media/grumpycat.99162d77.jpg": "/yaronl219/catinder/static/media/grumpycat.99162d77.jpg",
+    "static/media/med-cat.aa909114.jpg": "/yaronl219/catinder/static/media/med-cat.aa909114.jpg",
+    "static/media/old-cat.976ce761.jpg": "/yaronl219/catinder/static/media/old-cat.976ce761.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a7b66fc6.js",
+    "static/js/2.cdc71fb6.chunk.js",
+    "static/css/main.16277f05.chunk.css",
+    "static/js/main.c36fc383.chunk.js"
+  ]
+}
