@@ -42,7 +42,8 @@ function App() {
   }
 
   function getUserLocation() {
-    navigator.geolocation.getCurrentPosition(navigatorSuccess,navigatorError,{timeout:5000})
+    console.log('getting user location')
+    navigator.geolocation.getCurrentPosition(navigatorSuccess,navigatorError,{timeout:60000})
   }
 
   function navigatorSuccess(ev) {
