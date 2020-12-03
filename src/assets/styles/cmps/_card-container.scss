@@ -1,14 +1,14 @@
 .card-page-container {
-    // padding: 0.5rem;
-    // width: 90vw;
-    height: 90vh;
-    // max-width: 350px;
-    // max-height: 450px;
+    // height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow: hidden;
-    // background-image: linear-gradient(rgb(255, 255, 255) 0px, rgb(245, 247, 250));
+
+    >.placeholder {
+        width: 100%;
+        height: 2px;
+    }
 }
 
 .upper-container {
@@ -63,9 +63,10 @@
     display: flex;
     width: 100%;
     justify-content: space-around;
-    padding: 1rem;
+    padding: 10% 0.5rem;
     align-items: center;
     max-width: 450px;
+    
     button {
         background-color: #FAFAFA;
     }

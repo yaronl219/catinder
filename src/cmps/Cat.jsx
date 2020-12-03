@@ -34,8 +34,8 @@ export function Cat({ cat }) {
                             <div className="placeholder" />
                             <div className="cat-details">
                                 <div className="cat-header">
-                                    <span><h3 className="cat-name">{cat.name}</h3></span>
-                                    <span className="cat-age">{cat.age}</span>
+                                    <div><h3 className="cat-name">{cat.name}</h3></div>
+                                    <div className="cat-age"><span>{cat.age}</span></div>
                                 </div>
                                 <div className="cat-distance">
                                     {(userLocation) ? 

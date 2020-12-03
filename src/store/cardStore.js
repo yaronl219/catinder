@@ -53,9 +53,8 @@ export function createCardStore() {
         },
         onSwipe(cat,dir) {
             this.cards = this.cards.filter(currCat => currCat.id !== cat.id)
-            this.likedCats.unshift(cat)
-
             if (dir === 'right') {
+                this.likedCats.unshift(cat)
                 cardService.onLike(toJS(this.likedCats))
             } else {
                 cardService.onDislike(cat)

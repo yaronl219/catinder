@@ -119,6 +119,7 @@ export function CardSwipePage() {
                     </Fab>
                 </div>
             </div>
+            <div className="placeholder" />
             <Toast isOpen={isSnackBarOpen} behavior={snackBarBehavior} />
         </section>
     )

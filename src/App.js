@@ -1,4 +1,4 @@
-import { AppBar, Tabs, Tab, Dialog } from '@material-ui/core';
+import { AppBar, Tabs, Tab, Dialog, Badge } from '@material-ui/core';
 import React, { useEffect, useState } from 'react';
 import { Switch, useHistory, Route, useLocation } from 'react-router-dom';
 import { CardSwipePage } from './Pages/CardSwipePage';
@@ -11,6 +11,7 @@ import PersonIcon from '@material-ui/icons/Person';
 import InfoIcon from '@material-ui/icons/Info';
 import { AboutPage } from './Pages/AboutPage';
 import { LocationError } from './cmps/LocationError';
+import { useObserver } from 'mobx-react';
 
 function App() {
 
@@ -43,19 +44,22 @@ function App() {
 
   function getUserLocation() {
     console.log('getting user location')
-    navigator.geolocation.getCurrentPosition(navigatorSuccess,navigatorError,{timeout:60000})
+    navigator.geolocation.getCurrentPosition(navigatorSuccess, navigatorError, { timeout: 60000 })
   }
 
   function navigatorSuccess(ev) {
     console.log('app got loc')
     cardStore.setUserLocation(ev)
     cardStore.getUserPrefs()
+    cardStore.getLikedCats()
     console.log('loaded')
+
     setIsLoaded(true)
+
   }
 
   function navigatorError(ev) {
-    console.log('error',ev)
+    console.log('error', ev)
     setLocationError(true)
   }
 
@@ -64,15 +68,17 @@ function App() {
     getUserLocation()
   }
 
-  return (
+  return useObserver(() => (
     <div className="App">
       <Dialog open={hasLocationError}>
         <LocationError onClose={onCloseLocationAndRetry} />
-        </Dialog>
+      </Dialog>
       <AppBar>
         <Tabs value={tab} variant="fullWidth" onChange={(ev, val) => setTabFromParam(tabs[val])}>
           <Tab icon={<PetsIcon />} />
-          <Tab icon={<FavoriteIcon />} />
+          {/* <Badge badgeContent={4} color="secondary" overlap="circle"> */}
+            <Tab icon={<Badge badgeContent={cardStore.likedCats.length} color="secondary" max={99}><FavoriteIcon /></Badge>} />
+          {/* </Badge> */}
           <Tab icon={<PersonIcon />} />
           <Tab icon={<InfoIcon />} />
         </Tabs>
@@ -90,6 +96,7 @@ function App() {
 
 
     </div>
+  )
   );
 }
 
